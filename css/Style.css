@@ -1,0 +1,107 @@
+﻿/*Global*/
+.container {
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    background-color: #3d2b57;
+}
+
+p{
+    color: white;
+    font-size: 20px;
+}
+
+h1{
+    color: white;
+    font-style: italic;
+}
+
+label {
+    display: flex;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+}
+
+input[type=text]{
+    width: 100%;
+    border-radius: 5px;
+    padding: 1vh;
+}
+
+input[type=email] {
+    width: 100%;
+    border-radius: 5px;
+    padding: 1vh;
+}
+
+input[type=text] {
+    width: 100%;
+    border-radius: 5px;
+    padding: 1vh;
+}
+
+input[type=number] {
+    width: 100%;
+    border-radius: 5px;
+    padding: 1vh;
+}
+
+select {
+    width: 100%;
+    padding: 1vh;
+    border-radius: 5px;
+}
+
+option {
+    width: 100%;
+}
+/*Header*/
+#description {
+    font-style: italic;
+    font-weight: 200;
+}
+/*Survey Information*/
+#survey-information{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/*Survey form*/
+#survey-form{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    width: 60%;
+    height: auto;
+}
+
+
+
+.input-radio,
+.input-checkbox {
+    display: inline-block;
+    margin-right: 0.625em;
+    min-height: 1.25em;
+    min-width: 1.25em;
+}
+
+.input-textarea{
+    min-height: 200px; 
+    width: 100%; 
+}
+
+.submit-button {
+    width: 100%;
+    padding: vh;
+    background: green;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+

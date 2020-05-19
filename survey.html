@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="This is my survey form"/>
+    <meta name="keywords" content="statistics, information, data analysis" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Egor Ushakov" />
+    <link rel="stylesheet" type="text/css" href="./css/Style.css" />
+    <title>Survey Form</title>
+</head>
+<body ud="main">
+    <header>
+        <div class="container">
+            <div id="survey-information">
+                <h1 id="title">Covid-19 Survey Form</h1>
+                <p id="description">Thank you for taking the time to help to fill out this form</p>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <form id="survey-form">
+                    <div class="form-group">
+                        <label id="name-label" for="name">Name</label>
+                        <input type="text" id="name" class="form-control" name="name" placeholder="Enter your name" required />
+                    </div>
+                    <div class="form-group">
+                        <label id="email-label" for="email">Email</label>
+                        <input type="email" id="email" class="form-control" name="email" placeholder="Enter your email" required />
+                    </div>
+                    <div class="form-group">
+                        <label id="number-label" for="number">Age(optional)</label>
+                        <input type="number" id="number" min="18" max="100" class="form-control" name="age" placeholder="Age" />
+                    </div>
+
+                    <div class="form-group">
+                        <p>Which option best describes your current financial situation?</p>
+                        <select id="dropdown" name="situation" class="form-control" required>
+                            <option value="well">Extremely well off</option>
+                            <option value="average">Average</option>
+                            <option value="struggling">Struggling</option>
+                            <option value="preferNo">Prefer not tot say</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Has the COVID-19 pandameic affected your mental health?</p>
+                        <label><input name="mental-health" value="yes" type="radio" class="input-radio" checked />Yes</label>
+                        <label><input name="mental-health" value="no" type="radio" class="input-radio" />No</label>
+                        <label><input name="mental-health" value="notyet" type="radio" class="input-radio" /> Not yet</label>
+                    </div>
+
+                    <div class="form-group">
+                        <p>What symptoms have you experienced from the pandemic? (Check all that apply)</p>
+                        <label><input name="prefer" type="checkbox" value="fever" class="input-checkbox" />Fever</label>
+                        <label><input name="prefer" type="checkbox" value="drycough" class="input-checkbox" />Dry Cough</label>
+                        <label><input name="prefer" type="checkbox" value="tiredness" class="input-checkbox" />Tiredness</label>
+                        <label><input name="prefer" type="checkbox" value="achesPain" class="input-checkbox" />Aches and pains</label>
+                        <label><input name="prefer" type="checkbox" value="soreThroat" class="input-checkbox" />Sore throat</label>
+                        <label><input name="prefer" type="checkbox" value="diarrhoea" class="input-checkbox" />Diarrhoea</label>
+                        <label><input name="prefer" type="checkbox" value="conjuctivitis" class="input-checkbox" />Conjuctivitis</label>
+                        <label><input name="prefer" type="checkbox" value="loss_taste_smell" class="input-checkbox" />Headache</label>
+                        <label><input name="prefer" type="checkbox" value="loss_taste_smell" class="input-checkbox" />Loss of taste or smell</label>
+                        <label><input name="prefer" type="checkbox" value="difficultyBreath" class="input-checkbox" />Difficulty breathing or shortness of breath</label>
+                        <label><input name="prefer" type="checkbox" value="chestPain" class="input-checkbox" />Chest pain or pressure</label>
+                        <label><input name="prefer" type="checkbox" value="loss_speech_movement" class="input-checkbox" />Loss of speech or movement</label>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Any additional comments about COVID-19?</p>
+                        <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" id="submit" class="submit-button">Submit</button>
+                    </div>
+            </form>
+        </div>
+</section>
+</body>
+</html>
